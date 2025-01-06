@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // Preuzmi trenutni URL
+    const path = window.location.pathname;
+
+    // Mape ruta i fajlova
+    const routes = {
+      "/home": "/home.html",
+      "/projects": "/projects.html",
+      "/contact": "/contact.html",
+      "/about": "/about.html",
+      "/": "/index.html", // Početna strana
+    };
+
+    // Proveri da li ruta postoji u mapi
+    if (routes[path]) {
+      window.location.replace(routes[path]);
+    } else {
+      document.body.innerHTML = `
+        <h1>Stranica nije pronađena</h1>
+        <p>Vratite se na <a href="/">početnu stranu</a>.</p>
+      `;
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
