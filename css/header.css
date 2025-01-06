@@ -1,3 +1,7 @@
+header {
+    margin-bottom: 100px;
+}
+
 .upper_header {
     width: 100vw;
     height: 80px;
@@ -60,3 +64,4 @@
     width: 100%;
     left: 50%;
 }
+
