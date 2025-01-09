@@ -5,7 +5,7 @@
 .lang_sel {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 600px;
     height: 250px;
     border: 1px solid #FFFFFF;
     margin: 200px auto 0 auto;
@@ -14,7 +14,7 @@
 
 .text_holder {
     margin: auto 0px;
-    width: 500px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,8 +30,44 @@
 }
 
 .button {
+    display: flex;
     margin: 25px auto;
     width: 200px;
     height: 80px;
     border: 1px solid #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_img {
+    display: flex;
+    height: 45px;
+}
+
+.button_text {
+    margin-left: 20px;
+}
+
+.button_text a {
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding-bottom: 2px;
+}
+
+.button_text a::after {
+    content: '';
+    position: absolute; 
+    left: 50%; 
+    bottom: 0; 
+    width: 0%; 
+    height: 1px; 
+    background-color: #FFFFFF; 
+    transition: width 0.3s ease, left 0.3s ease; 
+}
+
+.button_text a:hover::after {
+    width: 100%; 
+    left: 0%; 
 }
