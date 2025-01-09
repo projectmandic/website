@@ -1,8 +1,5 @@
 footer {
     margin-top: 250px;
-}
-
-.footer {
     background-color: #000000;
     border-top: 1px solid #FFFFFF;
     position: flex;
@@ -34,6 +31,6 @@ footer {
     display: flex;
 }
 
-.copyright_p {
+.copyright_text {
     margin: 3vh 20vw 3vh auto;
 }
